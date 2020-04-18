@@ -16,11 +16,8 @@ steps:
     # do this before your build tasks
 
 - task: DotNetCoreCLI@2
-  displayName: Restore
+  displayName: Build
   inputs:
-    command: restore
+    command: build
     projects: '**/*.csproj'
-    feedsToUse: config
-    nugetConfigPath: NuGet.config    # Relative to root of the repository
-    externalFeedCredentials: azure-nuget-connection
-# ...
+    arguments: '--configuration Release' # Update this to match your need
