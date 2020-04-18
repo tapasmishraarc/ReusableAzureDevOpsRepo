@@ -21,7 +21,7 @@ stages:
       helm: false
       imageName: 'mydrive-user'
       helmCharts: charts
-      codeRootDir: docs/demo/nodejs
+      codeRootDir: docs/demo/dotnet
       deployType: 'helm-native'
       PR: {
         enabled: false,
