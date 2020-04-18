@@ -10,7 +10,7 @@ variables:
   nodeVersionSpec: 10.x
 
 stages:
-  - template: ../../../../pipeline-template.yml
+  - template: pipeline-template.yml
     parameters:
       linuxAgentPool: 'ubuntu-latest'
       windowsAgentPool: 'windows-latest'
