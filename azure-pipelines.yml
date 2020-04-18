@@ -18,7 +18,7 @@ stages:
       projectName: 'mydrive-user'
       initSteps: []
       docker: true
-      helm: false
+      helm: true
       imageName: 'mydrive-user'
       helmCharts: charts
       codeRootDir: docs/demo/nodejs
@@ -34,12 +34,12 @@ stages:
         enabled: true,
         azureContainerRegistry: 'artifacts-repo', 
         azureSubscription: 'azure-service-connection',
-       # azureContainerRegistryName: 'orgsharedregistry'#,
-        #scan: true,
-        #gate: true,
+        azureContainerRegistryName: 'orgsharedregistry',
+        scan: true,
+        gate: true,
       }
       AUTOMATION: {
-        enabled: false,
+        enabled: true,
         azureSubscription: 'azure-service-connection', 
         azureContainerRegistry: 'artifacts-repo',
         azureContainerRegistryName: 'orgsharedregistry',
@@ -49,7 +49,7 @@ stages:
         gate: true     
       }
       FUNCTIONAL: {
-        enabled: false,
+        enabled: true,
         azureSubscription: 'azure-service-connection', 
         azureContainerRegistry: 'artifacts-repo',
         azureContainerRegistryName: 'orgsharedregistry',
@@ -61,7 +61,7 @@ stages:
         gate: true,
       }
       NONFUNCTIONAL: {
-        enabled: false,
+        enabled: true,
         azureSubscription: 'azure-service-connection', 
         azureContainerRegistry: 'artifacts-repo',
         azureContainerRegistryName: 'orgsharedregistry',
