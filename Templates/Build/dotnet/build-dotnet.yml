@@ -1,1 +1,14 @@
-test
+parameters:
+    codeRootDir: ''
+    verbose: ''
+    runTests: ''
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '3.0.x'
+
+- task: UseDotNet@2
+  inputs:
+    version: '2.2.x'
+    packageType: runtime
