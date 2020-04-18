@@ -14,7 +14,7 @@ stages:
     parameters:
       linuxAgentPool: 'ubuntu-latest'
       windowsAgentPool: 'windows-latest'
-      buildType: 'nodejs'
+      buildType: 'dotnet'
       projectName: 'mydrive-user'
       initSteps: []
       docker: true
