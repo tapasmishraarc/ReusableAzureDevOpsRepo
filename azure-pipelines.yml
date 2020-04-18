@@ -34,7 +34,7 @@ stages:
         enabled: true,
         azureContainerRegistry: 'artifacts-repo', 
         azureSubscription: 'azure-service-connection',
-        azureContainerRegistryName: 'orgsharedregistry'#,
+       # azureContainerRegistryName: 'orgsharedregistry'#,
         #scan: true,
         #gate: true,
       }
