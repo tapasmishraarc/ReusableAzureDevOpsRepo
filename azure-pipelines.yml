@@ -32,9 +32,9 @@ stages:
       }
       CI: {
         enabled: true,
-        #azureContainerRegistry: 'artifacts-repo', 
-        #azureSubscription: 'azure-service-connection',
-        #azureContainerRegistryName: 'orgsharedregistry',
+        azureContainerRegistry: 'artifacts-repo', 
+        azureSubscription: 'azure-service-connection',
+        azureContainerRegistryName: 'orgsharedregistry',
         #scan: true,
         #gate: true,
       }
