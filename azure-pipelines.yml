@@ -39,7 +39,7 @@ stages:
         #gate: true,
       }
       AUTOMATION: {
-        enabled: true,
+        enabled: false,
         azureSubscription: 'azure-service-connection', 
         azureContainerRegistry: 'artifacts-repo',
         azureContainerRegistryName: 'orgsharedregistry',
