@@ -19,7 +19,7 @@ stages:
       initSteps: []
       docker: true
       helm: false
-      imageName: 'mydrive-user'
+      imageName: 'KubeApp-Dotnet'
       helmCharts: charts
       codeRootDir: docs/demo/dotnet
       deployType: 'helm-native'
