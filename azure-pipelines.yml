@@ -17,7 +17,7 @@ stages:
       buildType: 'dotnet'
       projectName: 'mydrive-user'
       initSteps: []
-      docker: false
+      docker: true
       helm: false
       imageName: 'mydrive-user'
       helmCharts: charts
