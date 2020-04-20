@@ -14,14 +14,14 @@ stages:
     parameters:
       linuxAgentPool: 'ubuntu-latest'
       windowsAgentPool: 'windows-latest'
-      buildType: 'nodejs'
+      buildType: 'dotnet'
       projectName: 'mydrive-user'
       initSteps: []
       docker: true
       helm: false
-      imageName: 'KubeApp-nodejs'
+      imageName: 'KubeApp-dotnet'
       helmCharts: charts
-      codeRootDir: docs/demo/nodejs
+      codeRootDir: docs/demo/dotnet
       deployType: 'helm-native'
       PR: {
         enabled: false,
