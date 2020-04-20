@@ -17,7 +17,7 @@ stages:
       buildType: 'nodejs'
       projectName: 'mydrive-user'
       initSteps: []
-      docker: false
+      docker: true
       helm: false
       imageName: 'KubeApp-nodejs'
       helmCharts: charts
