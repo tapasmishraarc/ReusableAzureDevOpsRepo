@@ -18,7 +18,7 @@ stages:
       projectName: 'mydrive-user'
       initSteps: []
       docker: true
-      helm: false
+      helm: true
       imageName: 'KubeApp-dotnet'
       helmCharts: charts
       codeRootDir: docs/demo/dotnet
