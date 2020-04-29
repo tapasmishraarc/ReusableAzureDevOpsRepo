@@ -15,10 +15,10 @@ stages:
       linuxAgentPool: 'ubuntu-latest'
       windowsAgentPool: 'windows-latest'
       buildType: 'dotnet'
-      projectName: 'mydrive-user'
+      projectName: 'kubeApp-dotnet'
       initSteps: []
       docker: true
-      helm: true
+      helm: false
       imageName: 'KubeApp-dotnet'
       helmCharts: charts
       codeRootDir: docs/demo/dotnet
