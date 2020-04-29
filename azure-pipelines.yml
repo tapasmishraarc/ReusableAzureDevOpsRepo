@@ -19,7 +19,7 @@ stages:
       initSteps: []
       docker: true
       helm: true
-      imageName: 'App-nodejs'
+      imageName: 'app-nodejs'
       helmCharts: charts
       codeRootDir: docs/demo/nodejs
       deployType: 'helm-native'
