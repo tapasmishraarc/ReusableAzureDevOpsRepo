@@ -14,14 +14,14 @@ stages:
     parameters:
       linuxAgentPool: 'ubuntu-latest'
       windowsAgentPool: 'windows-latest'
-      buildType: 'nodejs'
-      projectName: 'app-nodejs'
+      buildType: 'dotnet'
+      projectName: 'app-dotnet'
       initSteps: []
       docker: true
-      helm: true
+      helm: false
       imageName: 'app-nodejs'
       helmCharts: charts
-      codeRootDir: docs/demo/nodejs
+      codeRootDir: docs/demo/dotnet
       deployType: 'helm-native'
       PR: {
         enabled: false,
