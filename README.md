@@ -10,7 +10,7 @@ Please read [this]() blog for more information about the concept.
 3. Azure Container Registry
 4. Azure Kubernetes Services
 
-## Working with the code sample
+## Working with the code sample - For reusability
 1. Clone the repo.
 2. Import the pipelines in [the documentation folder](./docs/demo/nodejs/.azure/ci-azure-pipelines.yml) to Azure Pipelines.
 3. Create Environment targeting the AKS cluster.
